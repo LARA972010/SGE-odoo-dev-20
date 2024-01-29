@@ -3,3 +3,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Backups and sql dump files
+*.sql
+*.tgz
+*.tar.gz
+*.zip
