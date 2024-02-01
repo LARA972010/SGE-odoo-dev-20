@@ -16,15 +16,15 @@ Proyecto final SGE con Odoo, Docker, Docker Compose, Git y GitHub.
 
 ## _Fork_ del repositorio original
 
-Inicia sesión en tu cuenta de GitHub, haz un _fork_ de [javnitram/SGE-odoo-it-yourself](https://github.com/javnitram/SGE-odoo-it-yourself) y llama al tuyo SGE-odoo-dev-**XX** (el valor correspondiente a tu número de puesto, según el último byte de la dirección IP de clase.
+Inicia sesión en tu cuenta de GitHub, haz un _fork_ de [javnitram/SGE-odoo-it-yourself](https://github.com/javnitram/SGE-odoo-it-yourself) y llama al tuyo SGE-odoo-dev-**XX** (el valor correspondiente a tu número de puesto, según **los dígitos del hostname de clase**).
 
 - [ ] TODO demo fork
 
 ## Creación de rama de desarrollo y clonación del repositorio en local
 
-En tu repositorio, además de tener una rama _main_ o _master_, crea una rama con tu nombre de GitHub seguido de **XX**, según el número que te corresponda por puesto en el aula. Esta será tu rama de desarrollo.
+En tu repositorio, además de tener una rama _main_ o _master_, crea una rama con nombre **develop**. Esta será tu rama de desarrollo.
 
-![Branch](https://user-images.githubusercontent.com/1954675/214651541-e8e95116-671a-472b-be09-970f98de78f7.gif)
+- [ ] TODO demo branch
 
 Vas a usar esa rama para desarrollar tu propio módulo de Odoo. Para ello, deberás clonar la rama en local con Visual Studio Code.
 
@@ -36,7 +36,7 @@ A continuación, clona el repositorio (es posible que GitHub te pida autorizar p
 
 ![Git Clone](https://user-images.githubusercontent.com/1954675/214662378-484a9aaa-1be2-4ded-ac78-b3b997bc2fb7.gif)
 
-Asegúrate de estar apuntando a la rama de desarrollo.
+Asegúrate de estar apuntando a la rama de desarrollo: **develop**
 
 ![Checkout](https://user-images.githubusercontent.com/1954675/214665198-03e8f2b6-670c-4384-9ced-557ea86e6632.gif)
 
@@ -53,7 +53,7 @@ A diferencia de anteriores proyectos basados en el repo [javnitram/SGE-odoo-dock
 
 Tras instalar estas extensiones, obtendrás nuevas funciones en Visual Studio Code, a las cuales puedes acceder rápidamente desde la paleta de comandos con el atajo ```Control + Shift + P```. Asimismo, también podrás observar dos nuevos iconos en la barra de actividad (a la izquierda), uno correspondiente a la extensión de Docker y otro a la de PostgreSQL, nos familiarizaremos con ellas durante las demostraciones en clase.
 
-![iconos_barra_actividad](https://user-images.githubusercontent.com/1954675/214654250-62f53d6f-4200-4bf4-89fb-b20d320a1f95.gif)
+![Iconos barra lateral](https://user-images.githubusercontent.com/1954675/214654250-62f53d6f-4200-4bf4-89fb-b20d320a1f95.gif)
 
 ## Inicialización de Odoo y creación de la primera base de datos
 
