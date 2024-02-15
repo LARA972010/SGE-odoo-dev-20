@@ -1,0 +1,50 @@
+<odoo>
+  <data>
+
+    <!-- Definiciones de acciones de ventana para cada entidad -->
+    <record model="ir.actions.act_window" id="lgc_futbol.equipo_action_window">
+      <field name="name">Equipo</field>
+      <field name="res_model">lgc_futbol.equipo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lgc_futbol.jugador_action_window">
+      <field name="name">Jugador</field>
+      <field name="res_model">lgc_futbol.jugador</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lgc_futbol.liga_action_window">
+      <field name="name">Liga</field>
+      <field name="res_model">lgc_futbol.liga</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lgc_futbol.partido_action_window">
+      <field name="name">Partido</field>
+      <field name="res_model">lgc_futbol.partido</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menú principal "Futbol" -->
+    <menuitem name="Futbol" id="lgc_futbol.futbol_menu" sequence="100000"/>
+
+    <!-- Submenús -->
+    <menuitem name="Equipo" id="lgc_futbol.futbol_equipo_menu" 
+              parent="lgc_futbol.futbol_menu" 
+              action="lgc_futbol.equipo_action_window"/>
+
+    <menuitem name="Jugador" id="lgc_futbol.futbol_jugador_menu" 
+              parent="lgc_futbol.futbol_menu"
+              action="lgc_futbol.jugador_action_window"/>
+
+    <menuitem name="Liga" id="lgc_futbol.futbol_liga_menu" 
+              parent="lgc_futbol.futbol_menu"
+              action="lgc_futbol.liga_action_window"/>
+
+    <menuitem name="Partido" id="lgc_futbol.futbol_partido_menu" 
+              parent="lgc_futbol.futbol_menu"
+              action="lgc_futbol.partido_action_window"/>
+
+  </data>
+</odoo>

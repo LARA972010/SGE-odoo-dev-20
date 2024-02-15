@@ -1,0 +1,36 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="lgc_futbol.equipo_tree_view">
+      <field name="name">Equipo</field>
+      <field name="model">lgc_futbol.equipo</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="fundacion"/>
+          <field name="estadio"/>
+          <field name="ciudad"/>
+        </tree>
+      </field>
+    </record>
+
+
+
+    <record model="ir.ui.view" id="lgc_futbol.equipo_form_view">
+      <field name="name">Equipo</field>
+      <field name="model">lgc_futbol.equipo</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="fundacion"/>
+            <field name="estadio"/>
+            <field name="ciudad"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+
+  </data>
+</odoo>

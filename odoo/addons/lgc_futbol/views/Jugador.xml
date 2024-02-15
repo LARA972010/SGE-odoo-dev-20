@@ -1,0 +1,32 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="lgc_futbol.jugador_tree_view">
+      <field name="name">Jugador</field>
+      <field name="model">lgc_futbol.jugador</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="edad"/>
+          <field name="posicion"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="lgc_futbol.jugador_form_view">
+      <field name="name">Jugador</field>
+      <field name="model">lgc_futbol.jugador</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="edad"/>
+            <field name="posicion"/>
+        
+          </group>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</odoo>

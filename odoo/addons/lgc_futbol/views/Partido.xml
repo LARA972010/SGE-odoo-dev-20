@@ -1,0 +1,34 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="lgc_futbol.partido_tree_view">
+      <field name="name">Partido</field>
+      <field name="model">lgc_futbol.partido</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="fecha"/>
+          <field name="resultado"/>
+          
+        </tree>
+      </field>
+    </record>
+
+
+
+    <record model="ir.ui.view" id="lgc_futbol.partido_form_view">
+      <field name="name">Partido</field>
+      <field name="model">lgc_futbol.partido</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="fecha"/>
+            <field name="resultado"/>
+           
+          </group>
+        </form>
+      </field>
+    </record>
+
+
+  </data>
+</odoo>
