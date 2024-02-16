@@ -1,7 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_lgc_futbol_lgc_futbol_equipo,Permisos para equipo,model_lgc_futbol_equipo,base.group_user,1,1,1,0
 access_lgc_futbol_lgc_futbol_jugador,Permisos para jugador,model_lgc_futbol_jugador,base.group_user,1,1,1,0
-access_lgc_futbol_lgc_futbol_liga,Permisos para liga,model_lgc_futbol_liga,base.group_user,1,1,1,0
+access_lgc_futbol_lgc_futbol_liga,Permisos para liga,model_lgc_futbol_liga,base.group_user,1,0,0,0
 access_lgc_futbol_lgc_futbol_partido,Permisos para partido,model_lgc_futbol_partido,base.group_user,1,1,1,0
 
 
