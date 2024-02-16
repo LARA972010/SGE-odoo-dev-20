@@ -3,7 +3,7 @@
 
 
 # class Lgc_futbol(http.Controller):
-#     @http.route('/lgc.futbol/lgc.futbol', auth='public')
+#     @http.route('/lgc_futbol/lgc_futbol', auth='public')
 #     def index(self, **kw):
 #         return "Hello, world"
 

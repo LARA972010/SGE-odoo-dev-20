@@ -9,6 +9,7 @@
           <field name="name"/>
           <field name="fecha_inicio"/>
           <field name="fecha_fin"/>
+           <field name="equipos"></field>
          
         </tree>
       </field>
@@ -25,6 +26,7 @@
           <field name="name"/>
           <field name="fecha_inicio"/>
           <field name="fecha_fin"/>
+          <field name="equipos"></field>
            
           </group>
         </form>

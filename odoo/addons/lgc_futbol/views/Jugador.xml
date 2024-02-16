@@ -9,6 +9,7 @@
           <field name="name"/>
           <field name="edad"/>
           <field name="posicion"/>
+          <field name="equipo_id"></field>
         </tree>
       </field>
     </record>
@@ -22,6 +23,7 @@
             <field name="name"/>
             <field name="edad"/>
             <field name="posicion"/>
+            <field name="equipo_id"></field>
         
           </group>
         </form>
