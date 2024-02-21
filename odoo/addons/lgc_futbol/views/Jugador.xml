@@ -9,11 +9,13 @@
           <field name="name"/>
           <field name="edad"/>
           <field name="posicion"/>
-          <field name="equipo_id"></field>
+          <field name="equipo_id"/>
         </tree>
-      </field>
+           
+           
+           
+           </field>
     </record>
-
     <record model="ir.ui.view" id="lgc_futbol.jugador_form_view">
       <field name="name">Jugador</field>
       <field name="model">lgc_futbol.jugador</field>

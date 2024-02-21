@@ -10,7 +10,15 @@
         <field name="equipo_visitante"></field>
           <field name="fecha"/>
           <field name="resultado"/>
-          <field name="jugadores"></field>
+          <field name="jugadores">    
+            <tree>
+              <field name="name"/>
+              <field name="edad"/>
+              <field name="posicion"/>
+              <field name="equipo_id"/>
+            </tree> 
+          
+          </field>
           
         </tree>
       </field>
@@ -28,7 +36,14 @@
         <field name="equipo_visitante"></field>
             <field name="fecha"/>
             <field name="resultado"/>
-              <field name="jugadores"></field>
+              <field name="jugadores">
+                <tree>
+                  <field name="name"/>
+                  <field name="edad"/>
+                  <field name="posicion"/>
+                  <field name="equipo_id"/>
+                </tree> 
+              </field>
            
           </group>
         </form>

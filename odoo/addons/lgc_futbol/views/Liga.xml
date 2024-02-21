@@ -9,7 +9,20 @@
           <field name="name"/>
           <field name="fecha_inicio"/>
           <field name="fecha_fin"/>
-           <field name="equipos"></field>
+           <field name="equipos">
+            <tree>
+              <field name="name"/>
+              <field name="estadio"/>
+              <field name="ciudad"/>
+            </tree>
+           
+           
+           
+           </field>
+            
+            
+
+
          
         </tree>
       </field>
@@ -26,7 +39,15 @@
           <field name="name"/>
           <field name="fecha_inicio"/>
           <field name="fecha_fin"/>
-          <field name="equipos"></field>
+          <field name="equipos">
+            <tree>
+              <field name="name"/>
+              <field name="estadio"/>
+              <field name="ciudad"/>
+            </tree>
+          
+          
+          </field>
            
           </group>
         </form>
