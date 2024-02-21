@@ -6,6 +6,7 @@
       <field name="model">lgc_futbol.equipo</field>
       <field name="arch" type="xml">
         <tree>
+        <field name="portada" widget="image" options="{'size': [100, 100]}"/>
           <field name="name"/>
           <field name="fundacion"/>
           <field name="estadio"/>
@@ -23,6 +24,7 @@
       <field name="arch" type="xml">
         <form>
           <group>
+            <field name="portada" widget="image" options="{'size': [100, 100]}"/>
             <field name="name"/>
             <field name="fundacion"/>
             <field name="estadio"/>

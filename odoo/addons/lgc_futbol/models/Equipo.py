@@ -10,3 +10,4 @@ class Equipo(models.Model):
     estadio = fields.Char('Estadio')
     ciudad = fields.Char('Ciudad')
     liga_id = fields.Many2one('lgc_futbol.liga', string='Liga')
+    portada = fields.Image(string="Portada",store=True,help="Añade la imagen de tu equipo")

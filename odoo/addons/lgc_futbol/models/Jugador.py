@@ -9,3 +9,4 @@ class Jugador(models.Model):
     edad = fields.Integer('Edad')
     posicion = fields.Char('Posición')
     equipo_id = fields.Many2one('lgc_futbol.equipo', string='Equipo')
+    portada = fields.Image(string="Portada",store=True,help="Añade la imagen de tu equipo")
