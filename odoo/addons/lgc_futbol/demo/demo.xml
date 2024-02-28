@@ -1,12 +1,12 @@
 <odoo>
     <data>
-
         <!-- Equipos -->
         <record id="equipo_real_madrid" model="lgc_futbol.equipo">
             <field name="name">Real Madrid</field>
             <field name="fundacion">1902-03-06</field>
             <field name="estadio">Santiago Bernabéu</field>
             <field name="ciudad">Madrid</field>
+            <field name="portada" type="base64" file="real_madrid_logo.jpg"/>
         </record>
 
         <record id="equipo_barcelona" model="lgc_futbol.equipo">
@@ -14,6 +14,7 @@
             <field name="fundacion">1899-11-29</field>
             <field name="estadio">Camp Nou</field>
             <field name="ciudad">Barcelona</field>
+            <field name="portada" type="base64" file="barcelona_logo.jpg"/>
         </record>
 
         <!-- Jugadores -->
@@ -22,6 +23,7 @@
             <field name="edad">34</field>
             <field name="posicion">Delantero</field>
             <field name="equipo_id" ref="equipo_barcelona"/>
+            <field name="portada" type="base64" file="messi_photo.jpg"/>
         </record>
 
         <record id="jugador_ramos" model="lgc_futbol.jugador">
@@ -29,6 +31,7 @@
             <field name="edad">35</field>
             <field name="posicion">Defensa</field>
             <field name="equipo_id" ref="equipo_real_madrid"/>
+            <field name="portada" type="base64" file="ramos_photo.jpg"/>
         </record>
 
         <!-- Ligas -->
@@ -48,5 +51,3 @@
 
     </data>
 </odoo>
-
-
