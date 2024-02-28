@@ -14,10 +14,7 @@
               <field name="name"/>
               <field name="estadio"/>
               <field name="ciudad"/>
-            </tree>
-           
-           
-           
+            </tree>         
            </field>
             
             

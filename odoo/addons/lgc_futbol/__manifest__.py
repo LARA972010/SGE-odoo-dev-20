@@ -23,6 +23,7 @@
                                                                                                                                                           
     # always loaded
     'data': [
+        'demo/demo.xml',
         'security/ir.model.access.csv',
         'views/Equipo.xml',
         'views/Jugador.xml',
@@ -33,9 +34,7 @@
         
     ],
     # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+   
 
     'image': [
       
