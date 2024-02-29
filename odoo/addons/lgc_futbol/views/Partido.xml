@@ -10,7 +10,8 @@
         <field name="equipo_visitante"></field>
           <field name="fecha"/>
           <field name="resultado"/>
-          <field name="jugadores">    
+          <field name="jugadores" eval="[(4, ref('base.group_user')), (4, ref('jugador_ramos'))]"/>
+              
             <tree>
               <field name="name"/>
               <field name="edad"/>
