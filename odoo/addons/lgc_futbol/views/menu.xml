@@ -11,7 +11,7 @@
     <record model="ir.actions.act_window" id="lgc_futbol.jugador_action_window">
       <field name="name">Jugador</field>
       <field name="res_model">lgc_futbol.jugador</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
     <record model="ir.actions.act_window" id="lgc_futbol.liga_action_window">
