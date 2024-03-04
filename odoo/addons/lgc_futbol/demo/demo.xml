@@ -2,30 +2,99 @@
     <data>
 
      <!-- Ligas -->
-        <record id="liga_laliga" model="lgc_futbol.liga">
+        <record id="laliga1" model="lgc_futbol.liga">
             <field name="name">La Liga</field>
             <field name="fecha_inicio">2024-08-01</field>
-            <field name="fecha_fin">2025-05-30</field>
+            <field name="fecha_fin">2025-05-30</field>   
+        </record>
 
-            
-               
+         <record id="laliga2" model="lgc_futbol.liga">
+            <field name="name">La Liga 2ªDivisión</field>
+            <field name="fecha_inicio">2024-08-01</field>
+            <field name="fecha_fin">2025-05-30</field>   
         </record>
 
         <!-- Equipos -->
-        <record id="equipo_real_madrid" model="lgc_futbol.equipo">
-            <field name="name">Real Madrid</field>
-            <field name="fundacion">1902-03-06</field>
-            <field name="estadio">Santiago Bernabéu</field>
-            <field name="ciudad">Madrid</field>
-            <!-- <field name="equipos" ref"liga_laliga"/>  -->
-        </record>
+    <record id="equipo_real_madrid" model="lgc_futbol.equipo">
+        <field name="name">Real Madrid</field>
+        <field name="fundacion">1902-03-06</field>
+        <field name="estadio">Santiago Bernabéu</field>
+        <field name="ciudad">Madrid</field>
+        <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/real_madrid_logo.png"/>
+        <field name="liga_id" ref="laliga1"/>  
+    </record>
+
+<record id="equipo_alcorcon" model="lgc_futbol.equipo">
+    <field name="name">AD Alcorcón</field>
+    <field name="fundacion">1971-07-20</field>
+    <field name="estadio">Estadio Municipal de Santo Domingo</field>
+    <field name="ciudad">Alcorcón</field>
+    <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/alcorco.png"/>
+    <field name="liga_id" ref="laliga2"/>  
+</record>
 
         <record id="equipo_barcelona" model="lgc_futbol.equipo">
             <field name="name">Barcelona</field>
             <field name="fundacion">1899-11-29</field>
             <field name="estadio">Camp Nou</field>
             <field name="ciudad">Barcelona</field>
+            <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/barcelona_logo.png"></field>
+            <field name="liga_id" ref="laliga1"/>  
         </record>
+
+
+         <record id="equipo_atletico" model="lgc_futbol.equipo">
+    <field name="name">Atlético de Madrid</field>
+    <field name="fundacion">1903-04-26</field>
+    <field name="estadio">Wanda Metropolitano</field>
+    <field name="ciudad">Madrid</field>
+    <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/atleti.png"/>
+    <field name="liga_id" ref="laliga1"/>   
+</record>
+
+<record id="equipo_valencia" model="lgc_futbol.equipo">
+    <field name="name">Valencia CF</field>
+    <field name="fundacion">1919-03-18</field>
+    <field name="estadio">Mestalla</field>
+    <field name="ciudad">Valencia</field>
+    <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/valencia.png"/>
+    <field name="liga_id" ref="laliga1"/>  
+</record>
+
+<record id="equipo_sevilla" model="lgc_futbol.equipo">
+    <field name="name">Sevilla FC</field>
+    <field name="fundacion">1890-01-25</field>
+    <field name="estadio">Ramón Sánchez Pizjuán</field>
+    <field name="ciudad">Sevilla</field>
+    <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/sevilla.png"/>
+    <field name="liga_id" ref="laliga1"/>   
+</record>
+
+
+<record id="equipo_atletico_bilbao" model="lgc_futbol.equipo">
+    <field name="name">Athletic Club de Bilbao</field>
+    <field name="fundacion">1898-08-21</field>
+    <field name="estadio">San Mamés</field>
+    <field name="ciudad">Bilbao</field>
+    <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/atletic_bilbao.png"/>
+    <field name="liga_id" ref="laliga1"/>   
+</record>
+
+<record id="equipo_villarreal" model="lgc_futbol.equipo">
+    <field name="name">Villarreal CF</field>
+    <field name="fundacion">1923-03-10</field>
+    <field name="estadio">Estadio de la Cerámica</field>
+    <field name="ciudad">Villarreal</field>
+    <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/villareal.png"/>
+    <field name="liga_id" ref="laliga2"/>   
+</record>
+
+
+
+        
+
+
+
 
         <!-- Jugadores -->
         <record id="jugador_messi" model="lgc_futbol.jugador">
@@ -33,24 +102,122 @@
             <field name="edad">34</field>
             <field name="posicion">Delantero</field>
             <field name="equipo_id" ref="equipo_barcelona"/>
+            <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/messi.png"></field>
         </record>
 
-        <record id="jugador_ramos" model="lgc_futbol.jugador">
-            <field name="name">Sergio Ramos</field>
+        <record id="cristiano_ronaldo" model="lgc_futbol.jugador">
+            <field name="name">Cristiano Ronaldo</field>
             <field name="edad">35</field>
             <field name="posicion">Defensa</field>
             <field name="equipo_id" ref="equipo_real_madrid"/>
+            <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/cris.png"></field>
+           
+        
         </record>
 
-       
+        <record id="jugador_alcorcon" model="lgc_futbol.jugador">
+            <field name="name">Fede</field>
+            <field name="edad">28</field>
+            <field name="posicion">Centrocampista</field>
+            <field name="equipo_id" ref="equipo_alcorcon"/>
+            <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/fede.jpg"></field>
+        </record>  
+
+        <record id="jugador_atletico" model="lgc_futbol.jugador">
+            <field name="name">Luis Suárez</field>
+            <field name="edad">35</field>
+            <field name="posicion">Delantero</field>
+            <field name="equipo_id" ref="equipo_atletico"/>
+             <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/luis.jpg"></field>
+        </record>
+
+        <record id="jugador_valencia" model="lgc_futbol.jugador">
+            <field name="name">Carlos Soler</field>
+            <field name="edad">25</field>
+            <field name="posicion">Centrocampista</field>
+            <field name="equipo_id" ref="equipo_valencia"/>
+             <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/carlosSoler.jpg"></field>
+        </record>
+
+        <record id="jugador_sevilla" model="lgc_futbol.jugador">
+            <field name="name">Jesús Navas</field>
+            <field name="edad">35</field>
+            <field name="posicion">Defensa</field>
+            <field name="equipo_id" ref="equipo_sevilla"/>
+             <field name="portada" type="base64" file="/mnt/extra-addons/lgc_futbol/static/img/navas.png"></field>
+        </record>
+
+        <record id="jugador_atletico_bilbao" model="lgc_futbol.jugador">
+            <field name="name">Iker Muniain</field>
+            <field name="edad">29</field>
+            <field name="posicion">Centrocampista</field>
+            <field name="equipo_id" ref="equipo_atletico_bilbao"/>
+        </record>
+
+        <record id="jugador_villarreal" model="lgc_futbol.jugador">
+            <field name="name">Gerard Moreno</field>
+            <field name="edad">29</field>
+            <field name="posicion">Delantero</field>
+            <field name="equipo_id" ref="equipo_villarreal"/>
+        </record>
+
+
+
 
         <!-- Partidos -->
-        <record id="partido_clasico" model="lgc_futbol.partido">
+        <record id="partido_1" model="lgc_futbol.partido">
             <field name="equipo_local" ref="equipo_real_madrid"/>
-            <field name="equipo_visitante" ref="equipo_barcelona"/>
-            <field name="fecha">2024-10-25 20:00:00</field>
-
+            <field name="equipo_visitante" ref="equipo_alcorcon"/>
+            <field name="fecha">2024-10-28 18:00:00</field>
+            <field name="jugadores" eval="[(4,ref('cristiano_ronaldo'))]"></field>
+             <field name="jugadores" eval="[(4,ref('jugador_alcorcon'))]"></field>
         </record>
+
+        <record id="partido_2" model="lgc_futbol.partido">
+            <field name="equipo_local" ref="equipo_barcelona"/>
+            <field name="equipo_visitante" ref="equipo_atletico"/>
+            <field name="fecha">2024-10-29 21:00:00</field>
+        </record>
+
+        <record id="partido_3" model="lgc_futbol.partido">
+            <field name="equipo_local" ref="equipo_valencia"/>
+            <field name="equipo_visitante" ref="equipo_sevilla"/>
+            <field name="fecha">2024-10-30 20:30:00</field>
+        </record>
+
+        <record id="partido_4" model="lgc_futbol.partido">
+            <field name="equipo_local" ref="equipo_atletico_bilbao"/>
+            <field name="equipo_visitante" ref="equipo_villarreal"/>
+            <field name="fecha">2024-10-31 19:00:00</field>
+        </record>
+
+        <record id="partido_5" model="lgc_futbol.partido">
+            <field name="equipo_local" ref="equipo_real_madrid"/>
+            <field name="equipo_visitante" ref="equipo_atletico"/>
+            <field name="fecha">2024-11-03 20:00:00</field>
+        </record>
+
+        <record id="partido_6" model="lgc_futbol.partido">
+            <field name="equipo_local" ref="equipo_barcelona"/>
+            <field name="equipo_visitante" ref="equipo_valencia"/>
+            <field name="fecha">2024-11-04 19:30:00</field>
+        </record>
+
+        <record id="partido_7" model="lgc_futbol.partido">
+            <field name="equipo_local" ref="equipo_sevilla"/>
+            <field name="equipo_visitante" ref="equipo_atletico_bilbao"/>
+            <field name="fecha">2024-11-02 21:00:00</field>
+             <field name="resultado">1-1</field>
+        </record>
+
+        <record id="partido_8" model="lgc_futbol.partido">
+            <field name="equipo_local" ref="equipo_villarreal"/>
+            <field name="equipo_visitante" ref="equipo_alcorcon"/>
+            <field name="fecha">2024-11-01 20:45:00</field>
+             <field name="resultado">2-1</field>
+        </record>
+
+
 
     </data>
 </odoo>

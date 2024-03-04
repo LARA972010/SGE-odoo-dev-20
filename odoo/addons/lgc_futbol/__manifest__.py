@@ -25,9 +25,9 @@
     'data': [
         'demo/demo.xml',
         'security/ir.model.access.csv',
+        'views/Liga.xml',
         'views/Equipo.xml',
         'views/Jugador.xml',
-        'views/Liga.xml',
         'views/Partido.xml',
         'views/menu.xml',
         
