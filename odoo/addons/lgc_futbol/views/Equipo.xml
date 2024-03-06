@@ -36,5 +36,41 @@
     </record>
 
 
+
+ <record model="ir.ui.view" id="lgc_futbol.equipo_kanban_view">
+      <field name="name">Equipo Kanban</field>
+      <field name="model">lgc_futbol.equipo</field>
+      <field name="arch" type="xml">
+        <kanban>
+        <field name="id"></field>
+          <field name="portada" widget="image" options="{'size': [100, 100]}"/>
+          <field name="name"/>
+          <field name="fundacion"/>
+          <field name="estadio"/>
+          <field name="ciudad"/>
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_global_click">
+                <div class="o_kanban_image">
+                  <img t-att-src="kanban_image('lgc_futbol.equipo', 'portada', record.id.raw_value)" style="max-width:100%;max-height:100%;"/>
+                </div>
+                <div class="oe_kanban_details">
+                <ul>
+
+                  <li>Portada: <field name="portada"/></li>
+                  <li>Nombre: <field name="name"/></li>
+                  <li>Estadio: <field name="estadio"/></li>
+                 
+                </ul>
+
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record> 
+
+
   </data>
 </odoo>

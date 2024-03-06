@@ -32,5 +32,40 @@
     </record>
 
    
+ <record model="ir.ui.view" id="lgc_futbol.jugador_kanban_view">
+      <field name="name">Jugador Kanban</field>
+      <field name="model">lgc_futbol.jugador</field>
+      <field name="arch" type="xml">
+        <kanban>
+        <field name="id"></field>
+          <field name="portada" widget="image" options="{'size': [100, 100]}"/>
+          <field name="name"/>
+          <field name="edad"/>
+          <field name="posicion"/>
+          <field name="equipo_id"/>
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_global_click">
+                <div class="o_kanban_image">
+                  <img t-att-src="kanban_image('lgc_futbol.jugador', 'portada', record.id.raw_value)" style="max-width:100%;max-height:100%;"/>
+                </div>
+                <div class="oe_kanban_details">
+                <ul>
+
+                  <li>Foto: <field name="portada"></field></li>
+                  <li>Nombre: <field name="name"/></li>
+                  <li>Posicion: <field name="posicion"/></li>
+                  <li>Nombre de equipo: <field name="equipo_id"/></li>
+                </ul>
+
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record> 
+
+
   </data>
 </odoo>

@@ -5,25 +5,25 @@
     <record model="ir.actions.act_window" id="lgc_futbol.equipo_action_window">
       <field name="name">Equipo</field>
       <field name="res_model">lgc_futbol.equipo</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">kanban,tree,form</field>
     </record>
 
     <record model="ir.actions.act_window" id="lgc_futbol.jugador_action_window">
       <field name="name">Jugador</field>
       <field name="res_model">lgc_futbol.jugador</field>
-      <field name="view_mode">tree,form,kanban</field>
+      <field name="view_mode">kanban,tree,form</field>
     </record>
 
     <record model="ir.actions.act_window" id="lgc_futbol.liga_action_window">
       <field name="name">Liga</field>
       <field name="res_model">lgc_futbol.liga</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">kanban,tree,form</field>
     </record>
 
     <record model="ir.actions.act_window" id="lgc_futbol.partido_action_window">
       <field name="name">Partido</field>
       <field name="res_model">lgc_futbol.partido</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">kanban,tree,form</field>
     </record>
 
     <!-- Menú principal "Futbol" -->
