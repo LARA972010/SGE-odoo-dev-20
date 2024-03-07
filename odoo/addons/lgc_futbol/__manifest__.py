@@ -32,6 +32,7 @@
         'views/menu.xml',
         
         
+        
     ],
     # only loaded in demonstration mode
    

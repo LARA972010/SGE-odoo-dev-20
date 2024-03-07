@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields
 
+
+
 class Partido(models.Model):
     _name = 'lgc_futbol.partido'
     _description = 'Partido de fútbol'
@@ -11,3 +13,5 @@ class Partido(models.Model):
     resultado = fields.Char('Resultado')
     
     jugadores = fields.Many2many('lgc_futbol.jugador', string='Jugadores')
+
+    
