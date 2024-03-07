@@ -8,7 +8,7 @@
         <tree>
         <field name="equipo_local"></field>
         <field name="equipo_visitante"></field>
-          <field name="fecha"/>
+          <field name="fecha" widget="calendar"/>
           <field name="resultado"/>
            <field name="jugadores">
             <tree>
@@ -32,7 +32,7 @@
           <group>
           <field name="equipo_local"></field>
         <field name="equipo_visitante"></field>
-            <field name="fecha"/>
+            <field name="fecha" widget="calendar"/>
             <field name="resultado"/>
               <field name="jugadores">
                 <tree>
@@ -49,6 +49,44 @@
     </record>
 
 
+
+<record model="ir.ui.view" id="lgc_futbol.partido_kanban_view">
+    <field name="name">Partido Kanban</field>
+    <field name="model">lgc_futbol.partido</field>
+    <field name="arch" type="xml">
+        <kanban>
+            <field name="id"></field>
+            <field name="equipo_local"/>
+            <field name="equipo_visitante"/>
+            <field name="fecha" widget="calendar"/>
+            <field name="resultado"/>
+            <field name="jugadores"/> 
+            <templates>
+                <t t-name="kanban-box">
+                    <div class="oe_kanban_global_click">
+                        <div class="oe_kanban_details">
+                            <ul class="kanban-fields">
+                                <li>Partido: <field name="id"/></li>  
+                                <li> <field name="equipo_local"/> VS <field name="equipo_visitante"/> </li>     
+                                <ul>
+                                    <t t-foreach="record.jugadores" t-as="jugador">
+                                        <li class="player-item">
+                                            <span class="player-name"><t t-esc="jugador.name"/></span> 
+                                            <span class="player-position"><t t-esc="jugador.posicion"/></span>
+                                        </li>
+                                    </t>  
+                                </ul>                
+                            </ul>
+                        </div>
+                    </div>
+                </t>
+            </templates>
+             <search>
+                <field name="id"/>
+            </search>
+        </kanban>
+    </field>
+</record>
 
 
 

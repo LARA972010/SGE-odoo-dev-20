@@ -51,10 +51,8 @@
                 </div>
                 <div class="oe_kanban_details">
                 <ul>
-
-                  <li>Foto: <field name="portada"></field></li>
-                  <li>Nombre: <field name="name"/></li>
-                  <li>Posicion: <field name="posicion"/></li>
+                  <li><field name="name"/></li>
+                 
                   <li>Nombre de equipo: <field name="equipo_id"/></li>
                 </ul>
 
@@ -62,6 +60,13 @@
               </div>
             </t>
           </templates>
+
+           <search>
+                <field name="name"/>
+                <field name="equipo_id"/>
+            </search>
+
+
         </kanban>
       </field>
     </record> 

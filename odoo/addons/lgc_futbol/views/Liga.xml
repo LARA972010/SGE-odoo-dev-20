@@ -50,39 +50,39 @@
 
 
     <record model="ir.ui.view" id="lgc_futbol.liga_kanban_view">
-  <field name="name">Liga Kanban</field>
-  <field name="model">lgc_futbol.liga</field>
-  <field name="arch" type="xml">
-    <kanban>
-    <field name="id"></field>
-      <field name="name"/>
-      <field name="fecha_inicio"/>
-      <field name="fecha_fin"/>
-      <field name="equipos" widget="many2many_tags"/> 
-      <templates>
-        <t t-name="kanban-box">
-          <div class="oe_kanban_global_click">
-            <div class="o_kanban_image">
-              <img t-att-src="kanban_image('lgc_futbol.jugador', 'portada', record.id.raw_value)" style="max-width:100%;max-height:100%;"/>
-            </div>
-            <div class="oe_kanban_details">
-              <ul>
-                <li>Nombre: <t t-esc="record.name.value"/></li> 
-                <li>Fecha Inicio: <t t-esc="record.fecha_inicio.value"/></li>
-                <li>Equipos:
-                  <ul>
-                    <t t-foreach="record.equipos.raw_value" t-as="equipo">
-                      <li><t t-esc="equipo.display_name"/></li> 
-                    </t>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </t>
-      </templates>
-    </kanban>
-  </field>
+    <field name="name">Liga Kanban</field>
+    <field name="model">lgc_futbol.liga</field>
+    <field name="arch" type="xml">
+        <kanban>
+            <field name="id"></field>
+            <field name="name"/>
+            <field name="fecha_inicio"/>
+            <field name="fecha_fin"/>
+            <field name="equipos" widget="many2many_tags"/> 
+            <templates>
+                <t t-name="kanban-box">
+                    <div class="oe_kanban_global_click">
+                        <div class="oe_kanban_details">
+                            <ul>
+                                <li>Nombre: <t t-esc="record.name.value"/></li> 
+                                <li>Fecha Inicio: <t t-esc="record.fecha_inicio.value"/></li>
+                                <li>
+                                    <ul>
+                                        <t t-foreach="record.equipos.raw_value" t-as="equipo">
+                                            <li><t t-esc="equipo.display_name"/></li> 
+                                        </t>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </t>
+            </templates>
+             <search>
+                <field name="id"/>
+            </search>
+        </kanban>
+    </field>
 </record>
 
 
