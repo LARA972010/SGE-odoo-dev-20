@@ -88,6 +88,37 @@
     </field>
 </record>
 
+<!--  Vista de un gráfico   -->
+
+        <record model="ir.ui.view" id="lgc_futbol.partido_team_graph_view">
+            <field name="name">Partido Team Graph</field>
+            <field name="model">lgc_futbol.partido</field>
+            <field name="arch" type="xml">
+                <graph string="Partidos jugados por equipo" type="bar">
+                  
+                  <field name="resultado" type="row" />
+                  
+                    <field name="id" type="measure" operator="count"/>
+                </graph>
+            </field>
+        </record>
+
+<!--  Vista de un calendario   -->
+
+        <record model="ir.ui.view" id="lgc_futbol.partido_calendar_view">
+            <field name="name">Calendar</field>
+            <field name="model">lgc_futbol.partido</field>
+            <field name="arch" type="xml">
+                <calendar string="Partidos" date_start="fecha" color="equipo_local" >
+                    <field name="fecha"/>
+                    <field name="equipo_local"/>
+                    <field name="equipo_visitante"/>
+                    <field name="resultado"/>
+                </calendar>
+            </field>
+        </record>
+
+
 
 
 

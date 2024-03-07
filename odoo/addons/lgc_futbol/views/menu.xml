@@ -23,7 +23,7 @@
     <record model="ir.actions.act_window" id="lgc_futbol.partido_action_window">
       <field name="name">Partido</field>
       <field name="res_model">lgc_futbol.partido</field>
-      <field name="view_mode">kanban,tree,form</field>
+      <field name="view_mode">kanban,tree,form,graph,calendar</field>
     </record>
 
     <!-- Menú principal "Futbol" -->
